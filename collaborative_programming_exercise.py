@@ -1,1 +1,1 @@
-#File for the collaborative programming exercise
+my_string = "This is the file for the collaborative programming exercise"
