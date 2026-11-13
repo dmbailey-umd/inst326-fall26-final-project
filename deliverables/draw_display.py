@@ -91,8 +91,8 @@ def draw_display(player):
       
 # class Player:
 #     def __init__(self):
-#         self.people = 5
 #         self.money = 5
+#         self.people = 5
 #         self.army = 5
 #         self.church = 5
 #
@@ -103,8 +103,8 @@ def draw_display(player):
 #
 #     time.sleep(3)
 #
-#     player.people = 6
-#     player.money = 7
+#     player.money = 6
+#     player.people = 7
 #     player.army = 8
 #     player.church = 9
 #
