@@ -1,6 +1,27 @@
 import json
 
 def resource_updator(filename, issue_type, issue, decisions):
+    """
+    This function updates the values for each resource depending on the decision
+    the player makes.
+    
+    Args:
+    - filename(string): the name of the json file
+    - issue_type (string): the key name for the type of issue, used to access
+    the proper dictionary
+    - issue (int): the index for the actual issue once the category has been
+    selected
+    - decision (string): the decision that the player makes for how to handle
+    the situation
+    
+    Returns:
+    - Returns False if any of the resources reach 0
+    - Otherwise returns the dectionary with the updated values of each resource
+    
+    Side effects:
+    - Updates the values of each resource in the dictionary
+    """
+    
     #Read in the json file
     with open(filename, "r", encoding="UTF-8") as f:
             situations = json.load(f)
