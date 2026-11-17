@@ -1,0 +1,62 @@
+"""
+    Event categories - Minor,Regular,Major
+    Money People Army Church 
+    church events
+    ["church_divination","foreign_religion","false_prophet"]
+    "church_divination" - "Lots of people in your nation are suddenly interested in the church - Invest money here?"
+    "false_prophet" - "One of your priest arns you that there's a man claiming to be god
+    "foreign_religion" - "You get reports of a religious person from another religion. Invest money to the people? Invest money to the army?"  
+    
+    money events
+    ["disguised_thief","regular_thief","jester","trade_deal"]
+    "digusied_thief" = "A random person requests to have an audience with you... something feels off about this person as he drops his books"
+    "regular_thief" = "A suspicious looking person gets through the gates and takes money from one of your citizens. Increase your defense? " 
+    "jester" = "a random jester appears and asks if you can pay some MONEY in return for something nice or evil... [random] has increased/decreased[truly random event]"
+    "trade_deal" = "a foreign civilization requests to trade MONEY for some ARMY"
+    
+    people
+    ["black_plague","famine","agricultural_revolution","good_harvest"]
+    "black_plague" - "A horrid case of the black plague has swept your nation. It's a miracle that only half of your nation has died" 
+    - 1/10 of happening I swear I'll find a way to make this low
+    "famine" - "A horrid case of the famine has occurred"
+    
+    army
+    ["black_smith","army_training","army_invasion"]
+    black_smith = "a BLACKSMITH asking for MONEY to make weapons for the ARMY will result in MONEY decreasing and support of the ARMY increasing"
+    army_training = "You grow paranoid of an enemy nation attacking your civilization. Do you want to increase your defenses(Increase your ARMY)?"
+    ["Cant happen for the first 5 turns"]
+    army_invasion = "A [weak(20)/neighboring(40)/strong(72)] enemy has attacked your nation!" 
+    Effects listed here: 
+        strength_diff = enemy_strength - your_strength
+        Best Ending(strength_diff < 0):
+            - "You manage to fend off the enemies with little to no effort! The PEOPLE are impressed by your efforts to keep such a safe nation! As a result, morale is at an all time high!"
+            - Increase everything by 20 - 30
+        Ok ending(strength_diff > 10):
+            - "You manage to defend yourselves from the enemies. But it still hurt a bit"
+            - -10 PEOPLE
+            - -10 Gold
+            - -17 ARMY
+        Bad ending(enemy_strength > 40):
+            - "It's a miracle your nation is still alive... But it hurt a lot"
+            - -30 people
+            - -30 Gold
+            - -30 ARMY
+        Death(enemy_strength > 50):
+            - "Your nation was ravaged and pillaged to the ground. But now you are part of another nation!"
+            - -100 People
+            - -100 Gold
+            - -100 ARMY
+    Holy war will be added next time
+    beast_invasion = "There have been [small,large] footprints recently detected in this region... Huh that's odd. Do you want to investigate these footprints?"
+    Decisions: 
+        "Investigate the footprints"
+        - You find out these are actually footprints of a small [animal].
+        animal_pool:
+        [crow = Prevent Black Plague , Pigeon = Food Down, Locust Swarm = Food Down] 
+        - You find out these are actually footprints of a large [beast]
+        "Leave it alone"
+
+    Effects listed here: 
+        Bad ending(enemy_strength > 50):
+        Death( > 25):
+    """

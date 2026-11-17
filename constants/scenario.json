@@ -1,0 +1,83 @@
+{
+    "Church":{
+        "false_prophet":{
+            "dialogue":"One of your priest arns you that there's a man claiming to be god. Should we launch an investigation into the church for 10 GOLD?",
+            "choices":["Yes","No"],
+            "results":["It was a false alarm. There was no person claiming to be god","You Ignore the warnings of the priests"],
+            "effects":[[-10,0,0,0],[]],
+            "event_type":"random_choice"
+        }
+    },
+    "Money":{
+        "digusied_thief":{
+            "dialogue":"A random person requests to have an audience with you... something feels off about this person as he drops his books",
+            "choices":["Slime this innocent person?","Attend the audience"],
+            "results":["You jump this innocent random person. It was totally worth it this guy was a fraud the entire time","You allow the mysterious person to have an audience with you. You know something is off but you shrug it off. Before you know it, this man has taken 15 gold from you!"],
+            "effects":[[],[-15,0,0,0]],
+            "event_type":"random_choice"
+        },
+        "regular thief":{
+            "dialogue":"A suspicious looking person gets through the gates and takes money from one of your citizens. Increase your defense?",
+            "results":"",
+            "effects":[]
+        },
+        "jester":{
+            "dialogue":"a random jester appears and asks if you can pay some MONEY in return for something nice or evil...",
+            "choices":["Slime this innocent person?","Attend the audience"],
+            "results":["You jump this innocent random person. It was totally worth it this guy was a fraud the entire time","You allow the mysterious person to have an audience with you. You know something is off but you shrug it off. Before you know it, this man has taken 15 gold from you!"],
+            "effects":[[],[-15,0,0,0]],
+            "event_type":"random_choice"
+        },
+        "trade_deal":{
+            "dialogue":"A foreign civilization requests to trade {} MONEY for {} FOOD. Do you agree to the trade?",
+            "choices":["Yes","No"],
+            "results":["You jump this innocent random person. It was totally worth it this guy was a fraud the entire time","You allow the mysterious person to have an audience with you. You know something is off but you shrug it off. Before you know it, this man has taken 15 gold from you!"],
+            "effects":[[],[-15,0,0,0]],
+            "event_type":"random_choice"
+        }
+    },
+    "People":{
+        "black_plague":{
+            "dialogue":"A horrid case of the black plague has swept your nation. It's a miracle that only half of your nation has died.\n Should we focus on the CHURCH for religious affirmations or the crops for more FOOD?",
+            "choices":["Focus on your CHURCH","Focus on your FOOD"],
+            "results":["You focus on religious divinations in these tough times. You gained 30 RELIGION","You focused on feeding your ARMY and PEOPLE. The Scraps were hard to comeby but you manage to feed your people in these hard times. You recieved help from a foreign civilization in your harsh times."],
+            "effects":[0,-40,-20,30],
+            "event_type":"random"
+        },
+        "Famine":{
+            "dialogue":"A Wild Famine has struck your nation and neighboring nations. No one is able to offer aid this time.",
+            "choices":["Focus on your CHURCH","Focus on your FOOD"],
+            "results":["Despite your efforts at the CHURCH, your efforts still result in deaths in your nation.","Despite your efforts supplying the FOOD, your efforts still result in deaths in your nation."],
+            "effects":[[0,-30,-10,30],[0,-10,0,0]],
+            "event_type":"choice"
+        }
+    },
+    "Army":{
+        "army_training":{
+            "dialogue":"You grow paranoid of a possible enemy nation attacking your civilization. Do you want to expend PEOPLE to increase your ARMY?",
+            "choices":["Yes","No"],
+            "results":["You train your army in the event of a possible enemy invasion. Your ARMY increased and your PEOPLE decreased","It must have been a hallucination. It was all in your mind. Maybe this thought will come back to haunt you later. Who knows?"],
+            "effects":[[30,-20,0,0],[]],
+            "event_type":"choice"
+        },
+        "black_smith":{
+            "dialogue":"a BLACKSMITH asking for MONEY to make weapons for the ARMY will result in MONEY decreasing and support of the ARMY increasing",
+            "choices":["Yes","No"],
+            "results":["You command your army to train themselves of a possible enemy invasion. Your ARMY increased and your GOLD decreased","The BLACKSMITH feels hurt but it happens!"],
+            "effects":[[30,0,-20,0],[]],
+            "event_type":"choice"
+        },
+        "army_invasion":{
+            "dialogue":"A [weak(20)/neighboring(40)/strong(72)] enemy has attacked your nation!",
+            "results":["You manage to fend off the enemies with little to no effort! The PEOPLE are impressed by your efforts to keep such a safe nation! As a result, morale is at an all time high!",
+            "You manage to defend yourselves from the enemies. But it still hurt a bit","It's a miracle your nation is still alive... But it hurt a lot",
+            "Your nation was ravaged and pillaged to the ground. But now you are part of another nation!"],
+            "effects":[[30,20,20,10],[-10,-10,-10,0],[-30,-30,-30,0],[-100,-100,-100,-100]],
+            "event_type":"random"
+        },
+        "holy_war":{
+
+        }
+        
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "main_character":[
+        {
+        "name":"D'arce",
+        "title":"The Knight's Commander",
+        "description":"Your one and only commander of the knights she will be overseeing operations for your ARMY. She was once in the Knights of the Midnight Sun.",
+        "character_type":"main_character"
+        },
+        {
+        "name":"Cahara",
+        "title":"The Banker's Treasurer",
+        "description":"The main handler responsible for finances that will be reporting to you regarding MONEY events",
+        "character_type":"main_character"
+        },
+        {
+        "name":"Enki",
+        "title":"The Priest",
+        "description":"The main reporter regarding events in the CHURCH",
+        "character_type":"main_character"
+        },
+        {
+        "name":"Ragnavaldr",
+        "title":"The Spokesperson",
+        "description":"The main character responding to events of the PEOPLE. He's familiar with Nature",
+        "character_type":"main_character"
+        }
+        
+    ],
+    "side_character":[
+        {
+            "name":"Abella",
+            "title":"Blacksmith",
+            "description":"She's the Town's one and only Blacksmith"
+        }
+    ]
+}
