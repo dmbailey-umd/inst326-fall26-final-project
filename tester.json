@@ -1,0 +1,15 @@
+{
+    "people": [
+        {
+            "issue": "The blacksmith requests funding.",
+            "Yes": {
+                "people": 2,
+                "money": -1
+            },
+            "No": {
+                "people": -2,
+                "money": 1
+            }
+        }
+    ]
+}
